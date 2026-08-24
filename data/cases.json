@@ -1,0 +1,122 @@
+[
+    {
+        "id": "swap",
+        "title": "元社区 Swap 协议",
+        "desc": "基于 Uniswap V2 的通用 ERC20 代币兑换合约，支持精确输入/输出兑换，为社区提供安全、高效的链上兑换通道。",
+        "tags": ["DeFi", "Swap", "BSC"],
+        "chain": "BSC",
+        "features": [
+            "基于 Uniswap V2 Router 的自定义兑换路由",
+            "支持精确输入金额和精确输出金额两种兑换模式",
+            "滑点保护机制，防止三明治攻击",
+            "流动性池自动创建与管理",
+            "交易手续费动态调节",
+            "多币种兑换路径优化"
+        ],
+        "techStack": ["Solidity ^0.8.0", "OpenZeppelin", "Uniswap V2", "Hardhat"],
+        "cover": "uploads/cases/case_swap.png",
+        "images": ["uploads/cases/case_swap.png"],
+        "created": "2026-08-20"
+    },
+    {
+        "id": "reward",
+        "title": "多级奖励代币系统",
+        "desc": "支持多级推荐奖励、买卖费率差异化、随机奖励机制的复合代币合约，满足社区运营多样化激励需求。",
+        "tags": ["合约", "奖励", "多级推荐"],
+        "chain": "BSC",
+        "features": [
+            "多级推荐关系链追踪（级数可配置）",
+            "买入/卖出手续费独立设置（可不同）",
+            "每级奖励比例可配置",
+            "随机奖励机制：随机用户获得额外奖励",
+            "黑名单功能：封禁恶意地址",
+            "白名单功能：豁免特定地址手续费",
+            "运营钱包自动分配"
+        ],
+        "techStack": ["Solidity ^0.8.0", "IterableMapping", "PancakeSwap V2", "Remix"],
+        "cover": "uploads/cases/case_reward.png",
+        "images": ["uploads/cases/case_reward.png"],
+        "created": "2026-08-20"
+    },
+    {
+        "id": "nft",
+        "title": "NFT 市场合约",
+        "desc": "完整的 NFT 铸造、交易、版税分配系统，支持链上 SVG 图片生成，无需 IPFS 存储。",
+        "tags": ["NFT", "ERC721", "市场"],
+        "chain": "ETH / BSC",
+        "features": [
+            "ERC721 标准 NFT 合约",
+            "链上 SVG 图片生成（无需 IPFS 存储）",
+            "铸造（Mint）功能：限制数量和阶段",
+            "二级市场交易：挂单、撤单、成交",
+            "版税机制：创作者永久获得交易分成",
+            "白名单预售阶段",
+            "元数据（Metadata）链上存储"
+        ],
+        "techStack": ["Solidity ^0.8.0", "OpenZeppelin ERC721", "Base64", "SVG"],
+        "cover": "uploads/cases/case_nft.png",
+        "images": ["uploads/cases/case_nft.png"],
+        "created": "2026-08-20"
+    },
+    {
+        "id": "staking",
+        "title": "LP 质押挖矿平台",
+        "desc": "LP Token 质押挖矿平台，支持多奖励代币、推荐奖励与时间锁仓，收益实时计算分配。",
+        "tags": ["质押", "挖矿", "LP"],
+        "chain": "BSC",
+        "features": [
+            "LP Token 质押挖矿",
+            "多奖励代币支持（可同时挖多种币）",
+            "推荐奖励机制：邀请好友获得加成",
+            "时间锁仓：锁定越久收益越高",
+            "自动复利功能",
+            "紧急提取机制",
+            "收益实时计算与分配"
+        ],
+        "techStack": ["Solidity ^0.8.0", "OpenZeppelin", "PancakeSwap LP", "Hardhat"],
+        "cover": "uploads/cases/case_staking.png",
+        "images": ["uploads/cases/case_staking.png"],
+        "created": "2026-08-20"
+    },
+    {
+        "id": "fish",
+        "title": "Fish 生态",
+        "desc": "代币 + 质押 + NFT 三位一体生态，含持币分配、多级推荐、矿机质押等复合机制，安全防夹子设计。",
+        "tags": ["合约", "质押", "NFT", "奖励"],
+        "chain": "BSC",
+        "features": [
+            "代币合约（FLST）：USDT 持币分配 + LP 回流 + 运营钱包",
+            "买卖手续费独立设置，开盘前期 30% 高费率防机器人保护",
+            "同区块交易限制 + 合约地址检测防夹子攻击",
+            "质押合约：5 档矿机质押（USDT + 代币双质押）",
+            "动态回报：多级推荐奖励加速释放（级数与比例可配置）",
+            "NFT 分配：每次入金 10% 自动按 NFT 持有比例分配",
+            "入金销毁：部分代币自动燃烧通缩",
+            "循环绑定检测：防止推荐关系形成闭环"
+        ],
+        "techStack": ["Solidity ^0.8.4", "OpenZeppelin", "PancakeSwap V2", "DividendPayingToken"],
+        "cover": "uploads/cases/case_fish.png",
+        "images": ["uploads/cases/case_fish.png"],
+        "created": "2026-08-20"
+    },
+    {
+        "id": "uups",
+        "title": "UUPS 代理合约升级",
+        "desc": "可升级合约架构，支持逻辑合约热更新、数据永久保留，面向长期迭代的合约工程方案。",
+        "tags": ["代理合约", "UUPS", "可升级"],
+        "chain": "多链支持 (ETH/BSC/Polygon)",
+        "features": [
+            "UUPS 代理模式（EIP-1822）",
+            "逻辑合约热更新（无需迁移数据）",
+            "存储合约永久保留数据",
+            "管理员权限控制",
+            "版本管理与回滚机制",
+            "初始化函数安全调用",
+            "透明代理 vs UUPS 对比优化"
+        ],
+        "techStack": ["Solidity ^0.8.0", "OpenZeppelin UUPS", "Hardhat", "Ethers.js"],
+        "cover": "uploads/cases/case_uups.png",
+        "images": ["uploads/cases/case_uups.png"],
+        "created": "2026-08-20"
+    }
+]

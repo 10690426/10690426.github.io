@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>服务 | 链铸科技 - DApp·智能合约·交易所·公链·钱包开发</title>
+  <meta name="description" content="链铸科技提供 DApp、智能合约、监听服务、钱包、公链、交易所、聊天系统、会议系统、项目官网、资料宣发十大区块链开发服务。">
+  <meta name="keywords" content="DApp开发,智能合约开发,交易所开发,公链开发,钱包开发,Web3开发,区块链服务,代币发行,NFT交易,C2C交易">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://w.leo-lion.one/services.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="服务 | 链铸科技 - 区块链全生态开发服务">
+  <meta property="og:description" content="十大业务板块覆盖区块链项目从开发到运营的完整链路。">
+  <meta property="og:url" content="https://w.leo-lion.one/services.html">
+  <meta property="og:image" content="https://w.leo-lion.one/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/jpeg" href="logo.jpg">
+  <link rel="stylesheet" href="assets/styles.css?v=5">
+</head>
+<body data-page="services">
+  <div class="site">
+
+    <!-- 头部 -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="链铸科技首页">
+          <img class="brand-mark" src="logo.jpg" alt="链铸科技" aria-hidden="true">
+          <span class="brand-copy">
+            <span class="brand-name" data-i18n="brand.name">链铸科技</span>
+            <span class="brand-tagline" data-i18n="brand.tagline">区块链软件专业开发</span>
+          </span>
+        </a>
+
+        <nav class="header-nav" aria-label="主导航">
+          <ul class="nav-list">
+            <li><a href="index.html" data-i18n="nav.home">首页</a></li>
+            <li><a class="is-active" href="services.html" data-i18n="nav.services">服务</a></li>
+            <li><a href="solutions.html" data-i18n="nav.solutions">方案</a></li>
+            <li><a href="security.html" data-i18n="nav.security">安全</a></li>
+            <li><a href="cases.html" data-i18n="nav.cases">案例</a></li>
+            <li><a href="about.html" data-i18n="nav.about">关于</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">联系</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <div class="theme-toggle" aria-label="主题切换">
+            <button class="icon-btn" type="button" title="跟随系统" data-theme-choice="system">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </button>
+            <button class="icon-btn" type="button" title="亮色模式" data-theme-choice="light">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+            </button>
+            <button class="icon-btn" type="button" title="暗色模式" data-theme-choice="dark">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 14.5A7.5 7.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></svg>
+            </button>
+          </div>
+          <button class="icon-btn" type="button" title="语言选择" data-language-open>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 0 20M12 2a15.3 15.3 0 0 0 0 20"/></svg>
+          </button>
+          <a class="btn btn-primary" href="contact.html" data-i18n="nav.cta">开始合作</a>
+          <button class="icon-btn mobile-toggle" type="button" title="打开菜单" data-mobile-open>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Chain Block Ticker -->
+    <div class="chain-ticker" id="chainTicker">
+      <div class="chain-ticker-clip">
+      <div class="chain-ticker-inner">
+        <div class="chain-ticker-item" data-chain="btc">
+          <img class="chain-ticker-logo" src="assets/icons/btc.png" alt="BTC">
+          <span class="chain-ticker-name">BTC</span>
+          <span class="chain-ticker-height" data-chain-height="btc">--</span>
+        </div>
+        <div class="chain-ticker-item" data-chain="eth">
+          <img class="chain-ticker-logo" src="assets/icons/eth.png" alt="ETH">
+          <span class="chain-ticker-name">ETH</span>
+          <span class="chain-ticker-height" data-chain-height="eth">--</span>
+        </div>
+        <div class="chain-ticker-item" data-chain="bsc">
+          <img class="chain-ticker-logo" src="assets/icons/bnb.png" alt="BSC">
+          <span class="chain-ticker-name">BSC</span>
+          <span class="chain-ticker-height" data-chain-height="bsc">--</span>
+        </div>
+        <div class="chain-ticker-item" data-chain="sol">
+          <img class="chain-ticker-logo" src="assets/icons/sol.png" alt="Solana">
+          <span class="chain-ticker-name">SOL</span>
+          <span class="chain-ticker-height" data-chain-height="sol">--</span>
+        </div>
+        <div class="chain-ticker-item" data-chain="trx">
+          <img class="chain-ticker-logo" src="assets/icons/trx.png" alt="TRON">
+          <span class="chain-ticker-name">TRX</span>
+          <span class="chain-ticker-height" data-chain-height="trx">--</span>
+        </div>
+        <div class="chain-ticker-item" data-chain="arb">
+          <img class="chain-ticker-logo" src="assets/icons/arb.png" alt="ARB">
+          <span class="chain-ticker-name">ARB</span>
+          <span class="chain-ticker-height" data-chain-height="arb">--</span>
+        </div>
+        <div class="chain-ticker-item" data-chain="polygon">
+          <img class="chain-ticker-logo" src="assets/icons/matic.png" alt="Polygon">
+          <span class="chain-ticker-name">Polygon</span>
+          <span class="chain-ticker-height" data-chain-height="polygon">--</span>
+        </div>
+        <div class="chain-ticker-item" data-chain="xlayer">
+          <img class="chain-ticker-logo" src="assets/icons/okb.png" alt="X Layer">
+          <span class="chain-ticker-name">X Layer</span>
+          <span class="chain-ticker-height" data-chain-height="xlayer">--</span>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <!-- 主体 -->
+    <main class="site-main">
+
+      <!-- 页面标题 -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content" style="max-width:720px;">
+            <span class="badge">
+              <span class="badge-dot"></span>
+              <span data-i18n="services.hero.badge">核心服务</span>
+            </span>
+            <h1 data-i18n="services.hero.title">区块链全生态技术开发服务</h1>
+            <p class="hero-desc" data-i18n="services.hero.desc">从 DApp、智能合约到公链、交易所，覆盖区块链产品从开发到运营的完整链路。</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary btn-lg" href="contact.html" data-i18n="services.hero.cta">开始合作</a>
+              <a class="btn btn-ghost btn-lg" href="#all-services" data-i18n="services.hero.cta2">查看全部服务</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 全部服务 -->
+      <section class="section section-alt" id="all-services">
+        <div class="container reveal">
+          <div class="section-header">
+            <h2 class="section-title" data-i18n="services.section.title">我们的服务</h2>
+            <p class="section-desc" data-i18n="services.section.desc">十大业务板块，全面支撑区块链项目的技术开发与市场落地。</p>
+          </div>
+          <div class="grid-3">
+            <article class="card card-hover">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M7 8l3 3-3 3M12 14h5"/></svg>
+              </div>
+              <h3 class="card-title" data-i18n="services.dapp.title">DApp 开发</h3>
+              <p class="card-desc" data-i18n="services.dapp.desc">各类去中心化应用全栈开发，满足不同业务模式的链上产品需求。</p>
+              <div class="card-tags">
+                <span class="tag" data-i18n="services.dapp.tag1">质押类</span>
+                <span class="tag" data-i18n="services.dapp.tag2">分红类</span>
+                <span class="tag" data-i18n="services.dapp.tag3">锁仓类</span>
+                <span class="tag" data-i18n="services.dapp.tag4">销毁类</span>
+                <span class="tag" data-i18n="services.dapp.tag5">邀请模式</span>
+                <span class="tag" data-i18n="services.dapp.tag6">团队奖励</span>
+              </div>
+            </article>
+            <article class="card card-hover">
+              <div class="card-icon card-icon--secondary">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+              </div>
+              <h3 class="card-title" data-i18n="services.contract.title">智能合约</h3>
+              <p class="card-desc" data-i18n="services.contract.desc">根据业务规则设计、开发与部署各类智能合约，让链上逻辑清晰可靠。</p>
+              <div class="card-tags">
+                <span class="tag" data-i18n="services.contract.tag1">代币发行</span>
+                <span class="tag" data-i18n="services.contract.tag2">应用合约</span>
+                <span class="tag" data-i18n="services.contract.tag3">功能合约</span>
+                <span class="tag" data-i18n="services.contract.tag4">记账合约</span>
+              </div>
+            </article>
+            <article class="card card-hover">
+              <div class="card-icon card-icon--accent">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              </div>
+              <h3 class="card-title" data-i18n="services.monitor.title">监听服务</h3>
+              <p class="card-desc" data-i18n="services.monitor.desc">实时追踪链上动态，识别风险信号，为投资和运营决策提供数据支撑。</p>
+              <div class="card-tags">
+                <span class="tag" data-i18n="services.monitor.tag1">监听链上行为</span>
+                <span class="tag" data-i18n="services.monitor.tag2">入金出金追踪</span>
+                <span class="tag" data-i18n="services.monitor.tag3">风险计算</span>
+                <span class="tag" data-i18n="services.monitor.tag4">提前离场</span>
+              </div>
+            </article>
+            <article class="card card-hover">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4h-4Z"/></svg>
+              </div>
+              <h3 class="card-title" data-i18n="services.wallet.title">钱包开发</h3>
+              <p class="card-desc" data-i18n="services.wallet.desc">从零构建原生区块链钱包，支持多链资产管理、私钥安全与交易签名。</p>
+              <div class="card-tags">
+                <span class="tag" data-i18n="services.wallet.tag1">原生钱包开发</span>
+                <span class="tag" data-i18n="services.wallet.tag2">多链支持</span>
+                <span class="tag" data-i18n="services.wallet.tag3">安全存储</span>
+              </div>
+            </article>
+            <article class="card card-hover">
+              <div class="card-icon card-icon--secondary">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10Z"/></svg>
+              </div>
+              <h3 class="card-title" data-i18n="services.chain.title">公链开发</h3>
+              <p class="card-desc" data-i18n="services.chain.desc">自主公链研发，涵盖共识机制、节点网络、浏览器、跨链桥接与生态工具。</p>
+              <div class="card-tags">
+                <span class="tag" data-i18n="services.chain.tag1">公链开发</span>
+                <span class="tag" data-i18n="services.chain.tag2">共识机制</span>
+                <span class="tag" data-i18n="services.chain.tag3">生态工具</span>
+              </div>
+            </article>
+            <article class="card card-hover">
+              <div class="card-icon card-icon--accent">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4"/><circle cx="12" cy="12" r="4"/></svg>
+              </div>
+              <h3 class="card-title" data-i18n="services.exchange.title">交易所</h3>
+              <p class="card-desc" data-i18n="services.exchange.desc">全类型交易平台开发，从撮合引擎到用户端，一站式技术落地。</p>
+              <div class="card-tags">
+                <span class="tag" data-i18n="services.exchange.tag1">去中心化交易所</span>
+                <span class="tag" data-i18n="services.exchange.tag2">中心化交易所</span>
+                <span class="tag" data-i18n="services.exchange.tag3">C2C 交易</span>
+                <span class="tag" data-i18n="services.exchange.tag4">NFT 交易</span>
+              </div>
+            </article>
+            <article class="card card-hover">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10Z"/></svg>
+              </div>
+              <h3 class="card-title" data-i18n="services.chat.title">聊天系统</h3>
+              <p class="card-desc" data-i18n="services.chat.desc">端对端加密通讯系统，保障 Web3 社区与团队的安全沟通。</p>
+              <div class="card-tags">
+                <span class="tag" data-i18n="services.chat.tag1">加密聊天系统</span>
+                <span class="tag" data-i18n="services.chat.tag2">Web3 聊天系统</span>
+              </div>
+            </article>
+            <article class="card card-hover">
+              <div class="card-icon card-icon--secondary">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15.6 11.6A4 4 0 0 0 16 10V4a2 2 0 0 0-4 0v1"/><path d="M4 10v2a8 8 0 0 0 16 0v-2"/><path d="M12 19v3"/><path d="M8 22h8"/></svg>
+              </div>
+              <h3 class="card-title" data-i18n="services.meeting.title">会议系统</h3>
+              <p class="card-desc" data-i18n="services.meeting.desc">Web3 会议系统开发，支持去中心化身份验证与加密通讯。</p>
+              <div class="card-tags">
+                <span class="tag" data-i18n="services.meeting.tag1">语音</span>
+                <span class="tag" data-i18n="services.meeting.tag2">视频</span>
+                <span class="tag" data-i18n="services.meeting.tag3">投屏</span>
+                <span class="tag" data-i18n="services.meeting.tag4">Web3 集成</span>
+              </div>
+            </article>
+            <article class="card card-hover">
+              <div class="card-icon card-icon--accent">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9Z"/><path d="M9 22V12h6v10"/></svg>
+              </div>
+              <h3 class="card-title" data-i18n="services.website.title">项目官网</h3>
+              <p class="card-desc" data-i18n="services.website.desc">为区块链项目打造专业品牌官网，展示产品、团队与技术实力。</p>
+              <div class="card-tags">
+                <span class="tag" data-i18n="services.website.tag1">项目官网开发</span>
+                <span class="tag" data-i18n="services.website.tag2">品牌设计</span>
+                <span class="tag" data-i18n="services.website.tag3">响应式</span>
+              </div>
+            </article>
+            <article class="card card-hover">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8M15 18h-5"/></svg>
+              </div>
+              <h3 class="card-title" data-i18n="services.marketing.title">资料宣发</h3>
+              <p class="card-desc" data-i18n="services.marketing.desc">一站式项目包装与全球化推广，从内容制作到合规办理全面覆盖。</p>
+              <div class="card-tags">
+                <span class="tag" data-i18n="services.marketing.tag1">PPT</span>
+                <span class="tag" data-i18n="services.marketing.tag2">白皮书</span>
+                <span class="tag" data-i18n="services.marketing.tag3">视频制作</span>
+                <span class="tag" data-i18n="services.marketing.tag4">全球媒体宣发</span>
+                <span class="tag" data-i18n="services.marketing.tag5">金融牌照</span>
+                <span class="tag" data-i18n="services.marketing.tag6">合法运营</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 全栈交付范围 -->
+      <section class="section" id="scope">
+        <div class="container reveal">
+          <div class="section-header">
+            <h2 class="section-title" data-i18n="services.scope.title">全栈交付范围</h2>
+            <p class="section-desc" data-i18n="services.scope.desc">从业务理解到上线维护，减少多团队切换带来的沟通消耗。</p>
+          </div>
+          <div class="grid-4">
+            <div class="card card-flat">
+              <h3 class="card-title" data-i18n="services.scope.product.title">产品范围</h3>
+              <p class="card-desc" data-i18n="services.scope.product.desc">梳理业务目标、角色权限、链上动作与上线边界。</p>
+            </div>
+            <div class="card card-flat">
+              <h3 class="card-title" data-i18n="services.scope.arch.title">架构设计</h3>
+              <p class="card-desc" data-i18n="services.scope.arch.desc">设计前端、后端、合约、监听服务与数据流转。</p>
+            </div>
+            <div class="card card-flat">
+              <h3 class="card-title" data-i18n="services.scope.dev.title">开发实现</h3>
+              <p class="card-desc" data-i18n="services.scope.dev.desc">完成页面、交互逻辑、合约代码与服务联调。</p>
+            </div>
+            <div class="card card-flat">
+              <h3 class="card-title" data-i18n="services.scope.ops.title">上线运维</h3>
+              <p class="card-desc" data-i18n="services.scope.ops.desc">部署上线、验证关键流程，并进入维护迭代。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 行动号召 -->
+      <section class="section cta-section">
+        <div class="container reveal">
+          <div class="cta-box">
+            <h2 data-i18n="services.cta.title">需要确认项目可行性？</h2>
+            <p data-i18n="services.cta.desc">我们可以先从业务规则、链上交互和交付周期三个角度评估。</p>
+            <div class="cta-actions">
+              <a class="btn btn-primary btn-lg" href="contact.html" data-i18n="services.cta.btn">开始沟通</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="brand" href="index.html">
+              <img class="brand-mark" src="logo.jpg" alt="链铸科技" aria-hidden="true">
+              <span class="brand-copy">
+                <span class="brand-name" data-i18n="brand.name">链铸科技</span>
+                <span class="brand-tagline" data-i18n="brand.tagline">区块链软件专业开发</span>
+              </span>
+            </a>
+            <p class="footer-about" data-i18n="footer.about">专注区块链软件全栈交付，服务全球初创团队。</p>
+          </div>
+          <div class="footer-links">
+            <h4 data-i18n="footer.services">服务</h4>
+            <ul>
+              <li><a href="services.html" data-i18n="footer.services.dapp">DApp 开发</a></li>
+              <li><a href="services.html" data-i18n="footer.services.contract">智能合约</a></li>
+              <li><a href="services.html" data-i18n="footer.services.exchange">交易所</a></li>
+              <li><a href="services.html" data-i18n="footer.services.chain">公链开发</a></li>
+              <li><a href="services.html" data-i18n="footer.services.wallet">钱包开发</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4 data-i18n="footer.company">公司</h4>
+            <ul>
+              <li><a href="about.html" data-i18n="footer.company.about">关于我们</a></li>
+              <li><a href="cases.html" data-i18n="footer.company.cases">案例</a></li>
+              <li><a href="security.html" data-i18n="footer.company.security">安全</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4 data-i18n="footer.contact">联系</h4>
+            <ul>
+              <li><a href="contact.html" data-i18n="footer.contact.us">联系我们</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span data-i18n="footer.copyright">&copy; 2026 链铸科技 版权所有</span>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- 语言弹窗 -->
+  <div class="overlay" hidden data-language-modal>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="language-title">
+      <div class="modal-head">
+        <div>
+          <h2 id="language-title" data-i18n="lang.title">语言切换</h2>
+          <p data-i18n="lang.desc">选择您的语言偏好。</p>
+        </div>
+        <button class="icon-btn" type="button" title="关闭" data-language-close>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div class="language-grid">
+        <button class="language-option is-active" type="button" data-language-option="zh"><strong>中文</strong><span data-i18n="lang.zh.status">当前语言</span></button>
+        <button class="language-option" type="button" data-language-option="en"><strong>English</strong><span data-i18n="lang.en.status">English</span></button>
+        <button class="language-option" type="button" data-language-option="ja"><strong>日本語</strong><span data-i18n="lang.ja.status">日本語</span></button>
+        <button class="language-option" type="button" data-language-option="ko"><strong>한국어</strong><span data-i18n="lang.ko.status">한국어</span></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 移动端菜单 -->
+  <div class="overlay" hidden data-mobile-drawer>
+    <div class="drawer" role="dialog" aria-modal="true" aria-label="移动端菜单">
+      <div class="modal-head">
+        <div><h2 data-i18n="nav.menu">导航菜单</h2></div>
+        <button class="icon-btn" type="button" title="关闭" data-mobile-close>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <nav class="drawer-links">
+        <a href="index.html" data-i18n="nav.home">首页</a>
+        <a class="is-active" href="services.html" data-i18n="nav.services">服务</a>
+        <a href="solutions.html" data-i18n="nav.solutions">方案</a>
+        <a href="security.html" data-i18n="nav.security">安全</a>
+        <a href="cases.html" data-i18n="nav.cases">案例</a>
+        <a href="about.html" data-i18n="nav.about">关于</a>
+        <a href="contact.html" data-i18n="nav.contact">联系</a>
+      </nav>
+      <div class="drawer-actions">
+        <button class="btn btn-ghost" type="button" data-language-open data-i18n="nav.langswitch">语言</button>
+        <a class="btn btn-primary" href="contact.html" data-i18n="nav.cta">开始合作</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 回到顶部 -->
+  <button class="back-to-top" type="button" title="回到顶部" aria-label="回到顶部">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="assets/site.js?v=2"></script>
+</body>
+</html>

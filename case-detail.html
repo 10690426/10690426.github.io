@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>项目详情 | 链铸科技</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/jpeg" href="logo.jpg">
+  <link rel="stylesheet" href="assets/styles.css?v=5">
+</head>
+<body data-page="cases">
+  <div class="site">
+
+    <!-- 头部 -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="链铸科技首页">
+          <img class="brand-mark" src="logo.jpg" alt="链铸科技" aria-hidden="true">
+          <span class="brand-copy">
+            <span class="brand-name" data-i18n="brand.name">链铸科技</span>
+            <span class="brand-tagline" data-i18n="brand.tagline">区块链软件专业开发</span>
+          </span>
+        </a>
+        <nav class="header-nav" aria-label="主导航">
+          <ul class="nav-list">
+            <li><a href="index.html" data-i18n="nav.home">首页</a></li>
+            <li><a href="services.html" data-i18n="nav.services">服务</a></li>
+            <li><a href="solutions.html" data-i18n="nav.solutions">方案</a></li>
+            <li><a href="security.html" data-i18n="nav.security">安全</a></li>
+            <li><a class="is-active" href="cases.html" data-i18n="nav.cases">案例</a></li>
+            <li><a href="about.html" data-i18n="nav.about">关于</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">联系</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <div class="theme-toggle" aria-label="主题切换">
+            <button class="icon-btn" type="button" title="跟随系统" data-theme-choice="system"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></button>
+            <button class="icon-btn" type="button" title="亮色模式" data-theme-choice="light"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg></button>
+            <button class="icon-btn" type="button" title="暗色模式" data-theme-choice="dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 14.5A7.5 7.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></svg></button>
+          </div>
+          <button class="icon-btn" type="button" title="语言选择" data-language-open><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 0 20M12 2a15.3 15.3 0 0 0 0 20"/></svg></button>
+          <a class="btn btn-primary" href="contact.html" data-i18n="nav.cta">开始合作</a>
+          <button class="icon-btn mobile-toggle" type="button" title="打开菜单" data-mobile-open><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Chain Block Ticker -->
+    <div class="chain-ticker" id="chainTicker">
+      <div class="chain-ticker-clip">
+      <div class="chain-ticker-inner">
+        <div class="chain-ticker-item" data-chain="btc">
+          <img class="chain-ticker-logo" src="assets/icons/btc.png" alt="BTC">
+          <span class="chain-ticker-name">BTC</span>
+          <span class="chain-ticker-height" data-chain-height="btc">--</span>
+        </div>
+        <div class="chain-ticker-item" data-chain="eth">
+          <img class="chain-ticker-logo" src="assets/icons/eth.png" alt="ETH">
+          <span class="chain-ticker-name">ETH</span>
+          <span class="chain-ticker-height" data-chain-height="eth">--</span>
+        </div>
+        <div class="chain-ticker-item" data-chain="bsc">
+          <img class="chain-ticker-logo" src="assets/icons/bnb.png" alt="BSC">
+          <span class="chain-ticker-name">BSC</span>
+          <span class="chain-ticker-height" data-chain-height="bsc">--</span>
+        </div>
+        <div class="chain-ticker-item" data-chain="sol">
+          <img class="chain-ticker-logo" src="assets/icons/sol.png" alt="Solana">
+          <span class="chain-ticker-name">SOL</span>
+          <span class="chain-ticker-height" data-chain-height="sol">--</span>
+        </div>
+        <div class="chain-ticker-item" data-chain="trx">
+          <img class="chain-ticker-logo" src="assets/icons/trx.png" alt="TRON">
+          <span class="chain-ticker-name">TRX</span>
+          <span class="chain-ticker-height" data-chain-height="trx">--</span>
+        </div>
+        <div class="chain-ticker-item" data-chain="arb">
+          <img class="chain-ticker-logo" src="assets/icons/arb.png" alt="ARB">
+          <span class="chain-ticker-name">ARB</span>
+          <span class="chain-ticker-height" data-chain-height="arb">--</span>
+        </div>
+        <div class="chain-ticker-item" data-chain="polygon">
+          <img class="chain-ticker-logo" src="assets/icons/matic.png" alt="Polygon">
+          <span class="chain-ticker-name">Polygon</span>
+          <span class="chain-ticker-height" data-chain-height="polygon">--</span>
+        </div>
+        <div class="chain-ticker-item" data-chain="xlayer">
+          <img class="chain-ticker-logo" src="assets/icons/okb.png" alt="X Layer">
+          <span class="chain-ticker-name">X Layer</span>
+          <span class="chain-ticker-height" data-chain-height="xlayer">--</span>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <!-- 主体 -->
+    <main class="site-main">
+      <section class="section" style="padding-top: calc(var(--header-h) + 48px);">
+        <div class="container">
+
+          <!-- 返回 + 操作 -->
+          <div class="detail-nav">
+            <a class="btn btn-ghost" href="cases.html">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+              返回项目列表
+            </a>
+            <a id="detailLink" class="btn btn-primary" href="#" target="_blank" rel="noopener" style="display:none;">
+              访问项目
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+
+          <!-- 标题 -->
+          <h1 id="detailTitle" class="detail-title">加载中...</h1>
+
+          <!-- 元信息：链 + 标签 -->
+          <div id="detailMeta" class="detail-meta" style="display:none;"></div>
+
+          <!-- 图片轮播 -->
+          <div id="detailCarousel" class="carousel" style="display:none;">
+            <div class="carousel-track" id="carouselTrack"></div>
+            <button class="carousel-btn carousel-prev" type="button" aria-label="上一张">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <button class="carousel-btn carousel-next" type="button" aria-label="下一张">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+            <div class="carousel-dots" id="carouselDots"></div>
+          </div>
+
+          <!-- 介绍 -->
+          <div id="detailDesc" class="detail-desc"></div>
+
+          <!-- 核心特性 -->
+          <div id="detailFeatures" class="detail-block" style="display:none;">
+            <h2>核心特性</h2>
+            <ul id="featureList" class="detail-feature-list"></ul>
+          </div>
+
+          <!-- 技术栈 -->
+          <div id="detailStack" class="detail-block" style="display:none;">
+            <h2>技术栈</h2>
+            <div id="stackTags" class="card-tags"></div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="brand" href="index.html">
+              <img class="brand-mark" src="logo.jpg" alt="链铸科技" aria-hidden="true">
+              <span class="brand-copy">
+                <span class="brand-name" data-i18n="brand.name">链铸科技</span>
+                <span class="brand-tagline" data-i18n="brand.tagline">区块链软件专业开发</span>
+              </span>
+            </a>
+            <p class="footer-about" data-i18n="footer.about">专注区块链软件全栈交付，服务全球初创团队。</p>
+          </div>
+          <div class="footer-links">
+            <h4 data-i18n="footer.services">服务</h4>
+            <ul>
+              <li><a href="services.html" data-i18n="footer.services.dapp">DApp 开发</a></li>
+              <li><a href="services.html" data-i18n="footer.services.contract">智能合约</a></li>
+              <li><a href="services.html" data-i18n="footer.services.exchange">交易所</a></li>
+              <li><a href="services.html" data-i18n="footer.services.chain">公链开发</a></li>
+              <li><a href="services.html" data-i18n="footer.services.wallet">钱包开发</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4 data-i18n="footer.company">公司</h4>
+            <ul>
+              <li><a href="about.html" data-i18n="footer.company.about">关于</a></li>
+              <li><a href="cases.html" data-i18n="footer.company.cases">案例</a></li>
+              <li><a href="security.html" data-i18n="footer.company.security">安全</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4 data-i18n="footer.contact">联系</h4>
+            <ul>
+              <li><a href="contact.html" data-i18n="footer.contact.us">联系我们</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span data-i18n="footer.copyright">&copy; 2026 链铸科技 版权所有</span>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- 语言弹窗 -->
+  <div class="overlay" hidden data-language-modal>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="language-title">
+      <div class="modal-head">
+        <div>
+          <h2 id="language-title" data-i18n="lang.title">语言切换</h2>
+          <p data-i18n="lang.desc">选择您的语言偏好。</p>
+        </div>
+        <button class="icon-btn" type="button" title="关闭" data-language-close>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div class="language-grid">
+        <button class="language-option is-active" type="button" data-language-option="zh"><strong>中文</strong><span data-i18n="lang.zh.status">当前语言</span></button>
+        <button class="language-option" type="button" data-language-option="en"><strong>English</strong><span data-i18n="lang.en.status">English</span></button>
+        <button class="language-option" type="button" data-language-option="ja"><strong>日本語</strong><span data-i18n="lang.ja.status">日本語</span></button>
+        <button class="language-option" type="button" data-language-option="ko"><strong>한국어</strong><span data-i18n="lang.ko.status">한국어</span></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 移动端抽屉 -->
+  <div class="overlay" hidden data-mobile-drawer>
+    <div class="drawer" role="dialog" aria-modal="true" aria-label="移动端菜单">
+      <div class="modal-head">
+        <div><h2 data-i18n="nav.menu">导航菜单</h2></div>
+        <button class="icon-btn" type="button" title="关闭" data-mobile-close>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <nav class="drawer-links">
+        <a href="index.html" data-i18n="nav.home">首页</a>
+        <a href="services.html" data-i18n="nav.services">服务</a>
+        <a href="solutions.html" data-i18n="nav.solutions">方案</a>
+        <a href="security.html" data-i18n="nav.security">安全</a>
+        <a class="is-active" href="cases.html" data-i18n="nav.cases">案例</a>
+        <a href="about.html" data-i18n="nav.about">关于</a>
+        <a href="contact.html" data-i18n="nav.contact">联系</a>
+      </nav>
+      <div class="drawer-actions">
+        <button class="btn btn-ghost" type="button" data-language-open data-i18n="nav.langswitch">语言</button>
+        <a class="btn btn-primary" href="contact.html" data-i18n="nav.cta">开始合作</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 回到顶部 -->
+  <button class="back-to-top" type="button" title="回到顶部" aria-label="回到顶部">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="assets/site.js?v=2"></script>
+  <script>
+  (function() {
+    var params = new URLSearchParams(window.location.search);
+    var id = params.get('id');
+    if (!id) { window.location.href = 'cases.html'; return; }
+
+    fetch('data/cases.json', { cache: 'no-store' })
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        var item = data.find(function(d) { return d.id === id; });
+        if (!item) {
+          document.getElementById('detailTitle').textContent = '项目不存在';
+          return;
+        }
+
+        // 标题
+        document.getElementById('detailTitle').textContent = item.title;
+        document.title = item.title + ' | 链铸科技';
+
+        // 链接
+        if (item.link) {
+          var linkBtn = document.getElementById('detailLink');
+          linkBtn.href = item.link;
+          linkBtn.style.display = 'inline-flex';
+        }
+
+        // 介绍
+        document.getElementById('detailDesc').innerHTML = '<p>' + (item.desc || '').replace(/\n/g, '</p><p>') + '</p>';
+
+        // 元信息
+        var metaHtml = '';
+        if (item.chain) metaHtml += '<span class="tag tag-sm detail-chain">' + item.chain + '</span>';
+        (item.tags || []).forEach(function(t) { metaHtml += '<span class="tag tag-sm">' + t + '</span>'; });
+        if (metaHtml) {
+          var metaEl = document.getElementById('detailMeta');
+          metaEl.innerHTML = metaHtml;
+          metaEl.style.display = 'flex';
+        }
+
+        // 核心特性
+        if (item.features && item.features.length) {
+          document.getElementById('featureList').innerHTML = item.features.map(function(f) {
+            return '<li class="feature-item"><span class="feature-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg></span><p>' + f + '</p></li>';
+          }).join('');
+          document.getElementById('detailFeatures').style.display = 'block';
+        }
+
+        // 技术栈
+        if (item.techStack && item.techStack.length) {
+          document.getElementById('stackTags').innerHTML = item.techStack.map(function(t) {
+            return '<span class="tag tag-sm">' + t + '</span>';
+          }).join('');
+          document.getElementById('detailStack').style.display = 'block';
+        }
+
+        // 轮播
+        var images = (item.images && item.images.length) ? item.images : (item.cover ? [item.cover] : []);
+        if (images.length) {
+          var carousel = document.getElementById('detailCarousel');
+          var track = document.getElementById('carouselTrack');
+          var dots = document.getElementById('carouselDots');
+          carousel.style.display = 'block';
+
+          images.forEach(function(src, i) {
+            var slide = document.createElement('div');
+            slide.className = 'carousel-slide' + (i === 0 ? ' is-active' : '');
+            slide.innerHTML = '<img src="' + src + '" alt="项目截图 ' + (i+1) + '">';
+            track.appendChild(slide);
+
+            var dot = document.createElement('button');
+            dot.className = 'carousel-dot' + (i === 0 ? ' is-active' : '');
+            dot.type = 'button';
+            dot.dataset.index = i;
+            dots.appendChild(dot);
+          });
+
+          var current = 0;
+          var total = images.length;
+
+          function goTo(idx) {
+            current = (idx + total) % total;
+            track.style.transform = 'translateX(-' + (current * 100) + '%)';
+            var allSlides = track.querySelectorAll('.carousel-slide');
+            var allDots = dots.querySelectorAll('.carousel-dot');
+            allSlides.forEach(function(s, i) { s.classList.toggle('is-active', i === current); });
+            allDots.forEach(function(d, i) { d.classList.toggle('is-active', i === current); });
+          }
+
+          carousel.querySelector('.carousel-prev').addEventListener('click', function() { goTo(current - 1); });
+          carousel.querySelector('.carousel-next').addEventListener('click', function() { goTo(current + 1); });
+          dots.addEventListener('click', function(e) {
+            var dot = e.target.closest('.carousel-dot');
+            if (dot) goTo(parseInt(dot.dataset.index));
+          });
+        }
+      })
+      .catch(function() {
+        document.getElementById('detailTitle').textContent = '加载失败';
+      });
+  })();
+  </script>
+</body>
+</html>

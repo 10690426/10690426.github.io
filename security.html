@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>安全保障 | 链铸科技 - 智能合约安全·链上风控·代码审计</title>
+  <meta name="description" content="链铸科技在智能合约安全、链上风控、代码审计、权限管理与系统稳定性方面提供全面保障，确保项目安全运行。">
+  <meta name="keywords" content="智能合约安全,代码审计,链上风控,区块链安全,合约漏洞,权限控制,DApp安全">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://w.leo-lion.one/security.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="安全保障 | 链铸科技">
+  <meta property="og:description" content="智能合约安全、链上风控、代码审计，确保区块链项目安全运行。">
+  <meta property="og:url" content="https://w.leo-lion.one/security.html">
+  <meta property="og:image" content="https://w.leo-lion.one/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/jpeg" href="logo.jpg">
+  <link rel="stylesheet" href="assets/styles.css?v=5">
+</head>
+<body data-page="security">
+  <div class="site">
+
+    <!-- 头部 -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="链铸科技首页">
+          <img class="brand-mark" src="logo.jpg" alt="链铸科技" aria-hidden="true">
+          <span class="brand-copy">
+            <span class="brand-name" data-i18n="brand.name">链铸科技</span>
+            <span class="brand-tagline" data-i18n="brand.tagline">区块链软件专业开发</span>
+          </span>
+        </a>
+        <nav class="header-nav" aria-label="主导航">
+          <ul class="nav-list">
+            <li><a href="index.html" data-i18n="nav.home">首页</a></li>
+            <li><a href="services.html" data-i18n="nav.services">服务</a></li>
+            <li><a href="solutions.html" data-i18n="nav.solutions">方案</a></li>
+            <li><a class="is-active" href="security.html" data-i18n="nav.security">安全</a></li>
+            <li><a href="cases.html" data-i18n="nav.cases">案例</a></li>
+            <li><a href="about.html" data-i18n="nav.about">关于</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">联系</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <div class="theme-toggle" aria-label="主题切换">
+            <button class="icon-btn" type="button" title="跟随系统" data-theme-choice="system"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></button>
+            <button class="icon-btn" type="button" title="亮色模式" data-theme-choice="light"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg></button>
+            <button class="icon-btn" type="button" title="暗色模式" data-theme-choice="dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 14.5A7.5 7.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></svg></button>
+          </div>
+          <button class="icon-btn" type="button" title="语言选择" data-language-open><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 0 20M12 2a15.3 15.3 0 0 0 0 20"/></svg></button>
+          <a class="btn btn-primary" href="contact.html" data-i18n="nav.cta">开始合作</a>
+          <button class="icon-btn mobile-toggle" type="button" title="打开菜单" data-mobile-open><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Chain Block Ticker -->
+    <div class="chain-ticker" id="chainTicker">
+      <div class="chain-ticker-clip">
+      <div class="chain-ticker-inner">
+        <div class="chain-ticker-item" data-chain="btc">
+          <img class="chain-ticker-logo" src="assets/icons/btc.png" alt="BTC">
+          <span class="chain-ticker-name">BTC</span>
+          <span class="chain-ticker-height" data-chain-height="btc">--</span>
+        </div>
+        <div class="chain-ticker-item" data-chain="eth">
+          <img class="chain-ticker-logo" src="assets/icons/eth.png" alt="ETH">
+          <span class="chain-ticker-name">ETH</span>
+          <span class="chain-ticker-height" data-chain-height="eth">--</span>
+        </div>
+        <div class="chain-ticker-item" data-chain="bsc">
+          <img class="chain-ticker-logo" src="assets/icons/bnb.png" alt="BSC">
+          <span class="chain-ticker-name">BSC</span>
+          <span class="chain-ticker-height" data-chain-height="bsc">--</span>
+        </div>
+        <div class="chain-ticker-item" data-chain="sol">
+          <img class="chain-ticker-logo" src="assets/icons/sol.png" alt="Solana">
+          <span class="chain-ticker-name">SOL</span>
+          <span class="chain-ticker-height" data-chain-height="sol">--</span>
+        </div>
+        <div class="chain-ticker-item" data-chain="trx">
+          <img class="chain-ticker-logo" src="assets/icons/trx.png" alt="TRON">
+          <span class="chain-ticker-name">TRX</span>
+          <span class="chain-ticker-height" data-chain-height="trx">--</span>
+        </div>
+        <div class="chain-ticker-item" data-chain="arb">
+          <img class="chain-ticker-logo" src="assets/icons/arb.png" alt="ARB">
+          <span class="chain-ticker-name">ARB</span>
+          <span class="chain-ticker-height" data-chain-height="arb">--</span>
+        </div>
+        <div class="chain-ticker-item" data-chain="polygon">
+          <img class="chain-ticker-logo" src="assets/icons/matic.png" alt="Polygon">
+          <span class="chain-ticker-name">Polygon</span>
+          <span class="chain-ticker-height" data-chain-height="polygon">--</span>
+        </div>
+        <div class="chain-ticker-item" data-chain="xlayer">
+          <img class="chain-ticker-logo" src="assets/icons/okb.png" alt="X Layer">
+          <span class="chain-ticker-name">X Layer</span>
+          <span class="chain-ticker-height" data-chain-height="xlayer">--</span>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <!-- 主体 -->
+    <main class="site-main">
+
+      <!-- 页面标题 -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content" style="max-width:720px;">
+            <span class="badge"><span class="badge-dot"></span><span data-i18n="security.hero.badge">安全保障</span></span>
+            <h1 data-i18n="security.hero.title">让链上资产、业务流程与服务运行长期可靠</h1>
+            <p class="hero-desc" data-i18n="security.hero.desc">安全不是最后检查，而是从需求、架构、编码、测试、部署到维护的持续约束。</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary btn-lg" href="contact.html" data-i18n="security.hero.cta">开始合作</a>
+              <a class="btn btn-ghost btn-lg" href="services.html" data-i18n="security.hero.cta2">查看服务</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 安全开发重点 -->
+      <section class="section section-alt">
+        <div class="container reveal">
+          <div class="section-header">
+            <h2 class="section-title" data-i18n="security.focus.title">安全开发重点</h2>
+            <p class="section-desc" data-i18n="security.focus.desc">围绕智能合约、监听服务和前端交互三个层面控制风险。</p>
+          </div>
+          <div class="grid-3">
+            <article class="card card-hover">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3 20 7v5c0 5-3.4 8.4-8 9-4.6-.6-8-4-8-9V7l8-4Z"/><path d="m9 12 2 2 4-4"/></svg>
+              </div>
+              <h3 class="card-title" data-i18n="security.permission.title">合约权限</h3>
+              <p class="card-desc" data-i18n="security.permission.desc">明确角色权限、管理员边界、参数修改权限与紧急处理策略，防止越权操作。</p>
+            </article>
+            <article class="card card-hover">
+              <div class="card-icon card-icon--secondary">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7h16M4 12h10M4 17h16"/><path d="m17 10 3 3-3 3"/></svg>
+              </div>
+              <h3 class="card-title" data-i18n="security.asset.title">资产流向</h3>
+              <p class="card-desc" data-i18n="security.asset.desc">追踪资产在合约之间的流转路径，确保每次转移都有明确触发条件和记录。</p>
+            </article>
+            <article class="card card-hover">
+              <div class="card-icon card-icon--accent">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              </div>
+              <h3 class="card-title" data-i18n="security.stability.title">监听稳定性</h3>
+              <p class="card-desc" data-i18n="security.stability.desc">确保监听服务不漏事件、不重复处理、异常自动恢复，保障业务连续性。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 安全措施 -->
+      <section class="section">
+        <div class="container reveal">
+          <div class="section-header">
+            <h2 class="section-title" data-i18n="security.measures.title">安全措施</h2>
+            <p class="section-desc" data-i18n="security.measures.desc">在开发各环节嵌入安全检查，降低上线后出现问题的概率。</p>
+          </div>
+          <div class="grid-2">
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+              </div>
+              <div>
+                <h3 class="feature-title" data-i18n="security.input.title">输入验证</h3>
+                <p class="feature-desc" data-i18n="security.input.desc">所有外部输入在进入系统前经过严格校验，防止注入攻击和异常数据。</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              </div>
+              <div>
+                <h3 class="feature-title" data-i18n="security.isolation.title">权限隔离</h3>
+                <p class="feature-desc" data-i18n="security.isolation.desc">不同角色的操作权限严格分离，关键操作需要多重确认。</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>
+              </div>
+              <div>
+                <h3 class="feature-title" data-i18n="security.audit.title">合约审计</h3>
+                <p class="feature-desc" data-i18n="security.audit.desc">合约上线前进行内部代码审查，检查常见漏洞模式和边界条件。</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/><path d="M12 9v4M12 17h.01"/></svg>
+              </div>
+              <div>
+                <h3 class="feature-title" data-i18n="security.alert.title">异常告警</h3>
+                <p class="feature-desc" data-i18n="security.alert.desc">链上异常行为实时通知，关键事件触发自动化响应机制。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 安全流程 -->
+      <section class="section section-alt">
+        <div class="container reveal">
+          <div class="section-header">
+            <h2 class="section-title" data-i18n="security.process.title">交付中的安全流程</h2>
+            <p class="section-desc" data-i18n="security.process.desc">我们把风险检查嵌入每个阶段，而不是等到上线前集中处理。</p>
+          </div>
+          <div class="process-grid">
+            <div class="process-step">
+              <span class="process-num">01</span>
+              <h3 data-i18n="security.step1.title">规则梳理</h3>
+              <p data-i18n="security.step1.desc">把业务规则拆成可检查的合约与服务边界。</p>
+            </div>
+            <div class="process-step">
+              <span class="process-num">02</span>
+              <h3 data-i18n="security.step2.title">代码审查</h3>
+              <p data-i18n="security.step2.desc">检查权限、状态变化、资产流向和可升级性。</p>
+            </div>
+            <div class="process-step">
+              <span class="process-num">03</span>
+              <h3 data-i18n="security.step3.title">流程测试</h3>
+              <p data-i18n="security.step3.desc">验证成功、失败、异常与边界条件。</p>
+            </div>
+            <div class="process-step">
+              <span class="process-num">04</span>
+              <h3 data-i18n="security.step4.title">上线监控</h3>
+              <p data-i18n="security.step4.desc">上线后持续观察关键事件与服务状态。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 行动号召 -->
+      <section class="section cta-section">
+        <div class="container reveal">
+          <div class="cta-box">
+            <h2 data-i18n="security.cta.title">需要评估合约或监听架构的安全性？</h2>
+            <p data-i18n="security.cta.desc">我们可以从资产流转、权限模型和异常处理三个角度开始评估。</p>
+            <div class="cta-actions">
+              <a class="btn btn-primary btn-lg" href="contact.html" data-i18n="security.cta.btn1">开始合作</a>
+              <a class="btn btn-ghost btn-lg" href="services.html" data-i18n="security.cta.btn2">查看服务</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="brand" href="index.html">
+              <img class="brand-mark" src="logo.jpg" alt="链铸科技" aria-hidden="true">
+              <span class="brand-copy">
+                <span class="brand-name" data-i18n="brand.name">链铸科技</span>
+                <span class="brand-tagline" data-i18n="brand.tagline">因为敬业，所以专业</span>
+              </span>
+            </a>
+            <p class="footer-about" data-i18n="footer.about">专注区块链软件全栈交付，服务全球初创团队。</p>
+          </div>
+          <div class="footer-links">
+            <h4 data-i18n="footer.services">服务</h4>
+            <ul>
+              <li><a href="services.html" data-i18n="footer.services.dapp">DApp 开发</a></li>
+              <li><a href="services.html" data-i18n="footer.services.contract">智能合约</a></li>
+              <li><a href="services.html" data-i18n="footer.services.exchange">交易所</a></li>
+              <li><a href="services.html" data-i18n="footer.services.chain">公链开发</a></li>
+              <li><a href="services.html" data-i18n="footer.services.wallet">钱包开发</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4 data-i18n="footer.company">公司</h4>
+            <ul>
+              <li><a href="about.html" data-i18n="footer.company.about">关于我们</a></li>
+              <li><a href="cases.html" data-i18n="footer.company.cases">案例</a></li>
+              <li><a href="security.html" data-i18n="footer.company.security">安全</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4 data-i18n="footer.contact">联系</h4>
+            <ul>
+              <li><a href="contact.html" data-i18n="footer.contact.us">联系我们</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span data-i18n="footer.copyright">&copy; 2026 链铸科技 版权所有</span>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- 语言弹窗 -->
+  <div class="overlay" hidden data-language-modal>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="language-title">
+      <div class="modal-head">
+        <div>
+          <h2 id="language-title" data-i18n="lang.title">语言切换</h2>
+          <p data-i18n="lang.desc">选择您的语言偏好。</p>
+        </div>
+        <button class="icon-btn" type="button" title="关闭" data-language-close>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div class="language-grid">
+        <button class="language-option is-active" type="button" data-language-option="zh"><strong>中文</strong><span data-i18n="lang.zh.status">当前语言</span></button>
+        <button class="language-option" type="button" data-language-option="en"><strong>English</strong><span data-i18n="lang.en.status">English</span></button>
+        <button class="language-option" type="button" data-language-option="ja"><strong>日本語</strong><span data-i18n="lang.ja.status">日本語</span></button>
+        <button class="language-option" type="button" data-language-option="ko"><strong>한국어</strong><span data-i18n="lang.ko.status">한국어</span></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 移动端抽屉 -->
+  <div class="overlay" hidden data-mobile-drawer>
+    <div class="drawer" role="dialog" aria-modal="true" aria-label="移动端菜单">
+      <div class="modal-head">
+        <div><h2 data-i18n="nav.menu">导航菜单</h2></div>
+        <button class="icon-btn" type="button" title="关闭" data-mobile-close>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <nav class="drawer-links">
+        <a href="index.html" data-i18n="nav.home">首页</a>
+        <a href="services.html" data-i18n="nav.services">服务</a>
+        <a href="solutions.html" data-i18n="nav.solutions">方案</a>
+        <a class="is-active" href="security.html" data-i18n="nav.security">安全</a>
+        <a href="cases.html" data-i18n="nav.cases">案例</a>
+        <a href="about.html" data-i18n="nav.about">关于</a>
+        <a href="contact.html" data-i18n="nav.contact">联系</a>
+      </nav>
+      <div class="drawer-actions">
+        <button class="btn btn-ghost" type="button" data-language-open data-i18n="nav.langswitch">语言</button>
+        <a class="btn btn-primary" href="contact.html" data-i18n="nav.cta">开始合作</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 回到顶部 -->
+  <button class="back-to-top" type="button" title="回到顶部" aria-label="回到顶部">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="assets/site.js?v=2"></script>
+</body>
+</html>

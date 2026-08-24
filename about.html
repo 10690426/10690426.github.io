@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>关于我们 | 链铸科技 - 区块链全栈开发团队</title>
+  <meta name="description" content="链铸科技是专注区块链全生态开发的技术团队，掌握 React、Go、Rust、Solidity 等 50+ 技术栈，累计交付 107+ 项目。">
+  <meta name="keywords" content="链铸科技,区块链开发团队,Web3开发公司,区块链外包,智能合约团队,DApp开发团队">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://w.leo-lion.one/about.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="关于我们 | 链铸科技">
+  <meta property="og:description" content="专注区块链全生态开发，掌握 50+ 技术栈，累计交付 107+ 项目。">
+  <meta property="og:url" content="https://w.leo-lion.one/about.html">
+  <meta property="og:image" content="https://w.leo-lion.one/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/jpeg" href="logo.jpg">
+  <link rel="stylesheet" href="assets/styles.css?v=5">
+</head>
+<body data-page="about">
+  <div class="site">
+
+    <!-- 头部 -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="链铸科技首页">
+          <img class="brand-mark" src="logo.jpg" alt="链铸科技" aria-hidden="true">
+          <span class="brand-copy">
+            <span class="brand-name" data-i18n="brand.name">链铸科技</span>
+            <span class="brand-tagline" data-i18n="brand.tagline">区块链软件专业开发</span>
+          </span>
+        </a>
+        <nav class="header-nav" aria-label="主导航">
+          <ul class="nav-list">
+            <li><a href="index.html" data-i18n="nav.home">首页</a></li>
+            <li><a href="services.html" data-i18n="nav.services">服务</a></li>
+            <li><a href="solutions.html" data-i18n="nav.solutions">方案</a></li>
+            <li><a href="security.html" data-i18n="nav.security">安全</a></li>
+            <li><a href="cases.html" data-i18n="nav.cases">案例</a></li>
+            <li><a class="is-active" href="about.html" data-i18n="nav.about">关于</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">联系</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <div class="theme-toggle" aria-label="主题切换">
+            <button class="icon-btn" type="button" title="跟随系统" data-theme-choice="system"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></button>
+            <button class="icon-btn" type="button" title="亮色模式" data-theme-choice="light"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg></button>
+            <button class="icon-btn" type="button" title="暗色模式" data-theme-choice="dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 14.5A7.5 7.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></svg></button>
+          </div>
+          <button class="icon-btn" type="button" title="语言选择" data-language-open><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 0 20M12 2a15.3 15.3 0 0 0 0 20"/></svg></button>
+          <a class="btn btn-primary" href="contact.html" data-i18n="nav.cta">开始合作</a>
+          <button class="icon-btn mobile-toggle" type="button" title="打开菜单" data-mobile-open><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Chain Block Ticker -->
+    <div class="chain-ticker" id="chainTicker">
+      <div class="chain-ticker-clip">
+      <div class="chain-ticker-inner">
+        <div class="chain-ticker-item" data-chain="btc">
+          <img class="chain-ticker-logo" src="assets/icons/btc.png" alt="BTC">
+          <span class="chain-ticker-name">BTC</span>
+          <span class="chain-ticker-height" data-chain-height="btc">--</span>
+        </div>
+        <div class="chain-ticker-item" data-chain="eth">
+          <img class="chain-ticker-logo" src="assets/icons/eth.png" alt="ETH">
+          <span class="chain-ticker-name">ETH</span>
+          <span class="chain-ticker-height" data-chain-height="eth">--</span>
+        </div>
+        <div class="chain-ticker-item" data-chain="bsc">
+          <img class="chain-ticker-logo" src="assets/icons/bnb.png" alt="BSC">
+          <span class="chain-ticker-name">BSC</span>
+          <span class="chain-ticker-height" data-chain-height="bsc">--</span>
+        </div>
+        <div class="chain-ticker-item" data-chain="sol">
+          <img class="chain-ticker-logo" src="assets/icons/sol.png" alt="Solana">
+          <span class="chain-ticker-name">SOL</span>
+          <span class="chain-ticker-height" data-chain-height="sol">--</span>
+        </div>
+        <div class="chain-ticker-item" data-chain="trx">
+          <img class="chain-ticker-logo" src="assets/icons/trx.png" alt="TRON">
+          <span class="chain-ticker-name">TRX</span>
+          <span class="chain-ticker-height" data-chain-height="trx">--</span>
+        </div>
+        <div class="chain-ticker-item" data-chain="arb">
+          <img class="chain-ticker-logo" src="assets/icons/arb.png" alt="ARB">
+          <span class="chain-ticker-name">ARB</span>
+          <span class="chain-ticker-height" data-chain-height="arb">--</span>
+        </div>
+        <div class="chain-ticker-item" data-chain="polygon">
+          <img class="chain-ticker-logo" src="assets/icons/matic.png" alt="Polygon">
+          <span class="chain-ticker-name">Polygon</span>
+          <span class="chain-ticker-height" data-chain-height="polygon">--</span>
+        </div>
+        <div class="chain-ticker-item" data-chain="xlayer">
+          <img class="chain-ticker-logo" src="assets/icons/okb.png" alt="X Layer">
+          <span class="chain-ticker-name">X Layer</span>
+          <span class="chain-ticker-height" data-chain-height="xlayer">--</span>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <!-- 主体 -->
+    <main class="site-main">
+
+      <!-- 页面标题 -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content" style="max-width:720px;">
+            <span class="badge"><span class="badge-dot"></span><span data-i18n="about.hero.badge">关于我们</span></span>
+            <h1 data-i18n="about.hero.title">因为敬业，所以专业</h1>
+            <p class="hero-desc" data-i18n="about.hero.desc">链铸科技专注区块链软件专业开发，用清晰流程、稳定沟通和可靠工程能力，为全球初创团队完成从想法到上线的技术交付。</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary btn-lg" href="contact.html" data-i18n="about.hero.cta">开始合作</a>
+              <a class="btn btn-ghost btn-lg" href="services.html" data-i18n="about.hero.cta2">查看服务</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 工作方式 -->
+      <section class="section section-alt">
+        <div class="container reveal">
+          <div class="section-header">
+            <h2 class="section-title" data-i18n="about.work.title">我们的工作方式</h2>
+            <p class="section-desc" data-i18n="about.work.desc">项目推进中，我们重视需求澄清、架构边界、交付节奏和长期可维护性。</p>
+          </div>
+          <div class="grid-2">
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+              </div>
+              <div>
+                <h3 class="feature-title" data-i18n="about.dedicated.title">敬业</h3>
+                <p class="feature-desc" data-i18n="about.dedicated.desc">敬业不是口号，而是每个阶段都明确目标、输出和责任边界。</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>
+              </div>
+              <div>
+                <h3 class="feature-title" data-i18n="about.professional.title">专业</h3>
+                <p class="feature-desc" data-i18n="about.professional.desc">专业来自对区块链业务规则、工程实现和上线风险的持续理解。</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12a9 9 0 0 1-9 9m9-9a9 9 0 0 0-9-9m9 9H3m9 9a9 9 0 0 1-9-9m9 9c1.66 0 3-4.03 3-9s-1.34-9-3-9m0 18c-1.66 0-3-4.03-3-9s1.34-9 3-9m-9 9a9 9 0 0 1 9-9"/></svg>
+              </div>
+              <div>
+                <h3 class="feature-title" data-i18n="about.global.title">面向全球</h3>
+                <p class="feature-desc" data-i18n="about.global.desc">面向海外客户，保持直接沟通、清晰文档和稳定节奏。</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16v16H4z"/><path d="M9 9h6v6H9z"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg>
+              </div>
+              <div>
+                <h3 class="feature-title" data-i18n="about.maintainable.title">可维护</h3>
+                <p class="feature-desc" data-i18n="about.maintainable.desc">不仅上线，更为后续迭代、维护和扩展预留空间。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 技术栈 -->
+      <section class="section">
+        <div class="container reveal">
+          <div class="section-header">
+            <h2 class="section-title" data-i18n="about.tech.title">技术栈</h2>
+            <p class="section-desc" data-i18n="about.tech.desc">覆盖主流前端、后端、区块链、数据库、DevOps 等全栈技术体系。</p>
+          </div>
+          <div class="hero-tags" style="justify-content:center; flex-wrap:wrap; gap:10px;">
+            <span class="tag">React</span>
+            <span class="tag">Vue.js</span>
+            <span class="tag">Next.js</span>
+            <span class="tag">Nuxt.js</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">TailwindCSS</span>
+            <span class="tag">Flutter</span>
+            <span class="tag">React Native</span>
+            <span class="tag">Swift</span>
+            <span class="tag">Kotlin</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Go</span>
+            <span class="tag">Rust</span>
+            <span class="tag">Java</span>
+            <span class="tag">Python</span>
+            <span class="tag">PHP</span>
+            <span class="tag">Solidity</span>
+            <span class="tag">Move</span>
+            <span class="tag">Vyper</span>
+            <span class="tag">Cairo</span>
+            <span class="tag">Hardhat</span>
+            <span class="tag">Foundry</span>
+            <span class="tag">Truffle</span>
+            <span class="tag">OpenZeppelin</span>
+            <span class="tag">Ethers.js</span>
+            <span class="tag">Web3.js</span>
+            <span class="tag">Wagmi</span>
+            <span class="tag">Viem</span>
+            <span class="tag">The Graph</span>
+            <span class="tag">Subgraph</span>
+            <span class="tag">IPFS</span>
+            <span class="tag">Chainlink</span>
+            <span class="tag">Cosmos SDK</span>
+            <span class="tag">Substrate</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Redis</span>
+            <span class="tag">Elasticsearch</span>
+            <span class="tag">Kafka</span>
+            <span class="tag">RabbitMQ</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Kubernetes</span>
+            <span class="tag">AWS</span>
+            <span class="tag">Nginx</span>
+            <span class="tag">Linux</span>
+            <span class="tag">CI/CD</span>
+            <span class="tag">WebSocket</span>
+            <span class="tag">GraphQL</span>
+            <span class="tag">gRPC</span>
+            <span class="tag">WebRTC</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 行动号召 -->
+      <section class="section cta-section">
+        <div class="container reveal">
+          <div class="cta-box">
+            <h2 data-i18n="about.cta.title">合作从一次清晰沟通开始</h2>
+            <p data-i18n="about.cta.desc">如果你有产品想法、合约规则或监听需求，可以先把目标和当前阶段告诉我们。</p>
+            <div class="cta-actions">
+              <a class="btn btn-primary btn-lg" href="contact.html" data-i18n="about.cta.btn1">开始合作</a>
+              <a class="btn btn-ghost btn-lg" href="services.html" data-i18n="about.cta.btn2">查看服务</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="brand" href="index.html">
+              <img class="brand-mark" src="logo.jpg" alt="链铸科技" aria-hidden="true">
+              <span class="brand-copy">
+                <span class="brand-name" data-i18n="brand.name">链铸科技</span>
+                <span class="brand-tagline" data-i18n="brand.tagline">因为敬业，所以专业</span>
+              </span>
+            </a>
+            <p data-i18n="footer.about">专注区块链软件专业开发，为全球初创团队提供全栈交付。</p>
+          </div>
+          <div class="footer-links">
+            <h4 data-i18n="footer.services">服务</h4>
+            <ul>
+              <li><a href="services.html" data-i18n="footer.services.dapp">DApp 开发</a></li>
+              <li><a href="services.html" data-i18n="footer.services.contract">智能合约</a></li>
+              <li><a href="services.html" data-i18n="footer.services.exchange">交易所</a></li>
+              <li><a href="services.html" data-i18n="footer.services.chain">公链开发</a></li>
+              <li><a href="services.html" data-i18n="footer.services.wallet">钱包开发</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4 data-i18n="footer.company">公司</h4>
+            <ul>
+              <li><a href="about.html" data-i18n="footer.company.about">关于我们</a></li>
+              <li><a href="cases.html" data-i18n="footer.company.cases">项目案例</a></li>
+              <li><a href="security.html" data-i18n="footer.company.security">安全保障</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4 data-i18n="footer.contact">联系</h4>
+            <ul>
+              <li><a href="contact.html" data-i18n="footer.contact.us">联系我们</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span data-i18n="footer.copyright">&copy; 2026 链铸科技 版权所有</span>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- 语言弹窗 -->
+  <div class="overlay" hidden data-language-modal>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="language-title">
+      <div class="modal-head">
+        <div>
+          <h2 id="language-title" data-i18n="lang.title">语言切换</h2>
+          <p data-i18n="lang.desc">选择您的语言偏好。</p>
+        </div>
+        <button class="icon-btn" type="button" title="关闭" data-language-close>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div class="language-grid">
+        <button class="language-option is-active" type="button" data-language-option="zh"><strong>中文</strong><span data-i18n="lang.zh.status">当前语言</span></button>
+        <button class="language-option" type="button" data-language-option="en"><strong>English</strong><span data-i18n="lang.en.status">English</span></button>
+        <button class="language-option" type="button" data-language-option="ja"><strong>日本語</strong><span data-i18n="lang.ja.status">日本語</span></button>
+        <button class="language-option" type="button" data-language-option="ko"><strong>한국어</strong><span data-i18n="lang.ko.status">한국어</span></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 移动端菜单 -->
+  <div class="overlay" hidden data-mobile-drawer>
+    <div class="drawer" role="dialog" aria-modal="true" aria-label="移动端菜单">
+      <div class="modal-head">
+        <div>
+          <h2 data-i18n="nav.menu">导航菜单</h2>
+          <p data-i18n="about.drawer.subtitle">快速访问各页面</p>
+        </div>
+        <button class="icon-btn" type="button" title="关闭" data-mobile-close>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <nav class="drawer-links">
+        <a href="index.html" data-i18n="nav.home">首页</a>
+        <a href="services.html" data-i18n="nav.services">服务</a>
+        <a href="solutions.html" data-i18n="nav.solutions">方案</a>
+        <a href="security.html" data-i18n="nav.security">安全</a>
+        <a href="cases.html" data-i18n="nav.cases">案例</a>
+        <a class="is-active" href="about.html" data-i18n="nav.about">关于</a>
+        <a href="contact.html" data-i18n="nav.contact">联系</a>
+      </nav>
+      <div class="drawer-actions">
+        <button class="btn btn-ghost" type="button" data-language-open data-i18n="nav.langswitch">语言</button>
+        <a class="btn btn-primary" href="contact.html" data-i18n="nav.cta">开始合作</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 回到顶部 -->
+  <button class="back-to-top" type="button" title="回到顶部" aria-label="回到顶部">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="assets/site.js?v=2"></script>
+</body>
+</html>
